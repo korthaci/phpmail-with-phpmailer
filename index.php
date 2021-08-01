@@ -2,6 +2,7 @@
 
 include 'class.phpmailer.php';
 include 'class.smtp.php';
+include 'phpmail.class.php';
 
 $smtp_host	= 'mail.domain.com';
 $smtp_k_adi	= 'mail@domain.com'; /*mail username, email@domain.com*/

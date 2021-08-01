@@ -4,7 +4,7 @@ include 'class.phpmailer.php';
 include 'class.smtp.php';
 
 $smtp_port_tls	= 587;
-$smtp_host		= 'mail.domain.com';
+$smtp_host	= 'mail.domain.com';
 $smtp_k_adi	= 'mail@domain.com'; /*mail username, email@domain.com*/
 $smtp_sifre	= '123456'; /*password*/
 
@@ -16,10 +16,9 @@ $smtp_dizi = array(
 	'yandex'=>array('port'=>587,'from'=>false,'host'=>'smtp.yandex.com', 'k_adi'=>'binaraba@yandex.com', 'sifre'=>'password'),
 	'amazon'=>array('port'=>587,'from'=>$smtp_k_adi,'host'=>'email-smtp.us-east-1.amazonaws.com', 'k_adi'=>'AKIAQAZQA2DCFVCTJTOH', 'sifre'=>'BOHcoIdqm2OzhFtsFigWAWGrar2jW3cHMKaeoa8YgirX')
 );
-
+/*end of config*/
 $phpmailer = new phpmailer_mail($smtp_dizi, 1);
 
-/*end of config*/
 
     $body = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>New mail</title></head><body><div>Hello. New mail!</div></body></html>';
     $altmail = 'Hello. New mail!';

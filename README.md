@@ -1,5 +1,5 @@
 # phpmail-with-phpmailer
-This code makes it easy to send mail using phpmailer.
+makes it easier to send mail using phpmailer.
 
 With this script, mail can be sent using local server, yandex, gmail, live, amazon ses.
 
